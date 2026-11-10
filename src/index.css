@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+}
+
+/* Background theme variants toggled by the noe1 button */
+.theme-default {
+  background-color: #08111f !important;
+  color: #f8fafc !important;
+}
+
+.theme-emerald {
+  background-color: #062e24 !important;
+  color: #e6fcf5 !important;
+}
+
+.theme-dark-purple {
+  background-color: #1a0b2e !important;
+  color: #f3e8ff !important;
+}
+
+.theme-light {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* Offcanvas custom styling */
+.offcanvas.text-bg-dark {
+  background-color: #0f172a !important;
+  border-left: 1px solid #1e293b;
+}
+
+.offcanvas.bg-light {
+  background-color: #ffffff !important;
+  border-left: 1px solid #e2e8f0;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom styling for the noe1 button */
+#noe1 {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+}
+
+#noe1:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(255, 193, 7, 0.4) !important;
+}
+
+#noe1:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.badge-rwanda {
+  background: linear-gradient(135deg, #00a1de 0%, #fad201 50%, #20603d 100%);
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.stat-glow {
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.15);
+}
